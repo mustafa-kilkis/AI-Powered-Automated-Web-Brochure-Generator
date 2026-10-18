@@ -16,7 +16,7 @@ api_key = os.getenv("GEMINI_API_KEY")
 if not api_key:
     sys.exit("Error: GEMINI_API_KEY not found. Please check your .env file.")
 
-# En yeni Google GenAI istemcisini başlatıyoruz
+# Initialize the new Google GenAI client
 client = genai.Client(api_key=api_key)
 MODEL = "gemini-3.8-flash"
 
